@@ -1,0 +1,8 @@
+# Source: https://blog.datapolitan.com/2015/08/25/installing-matplotlib-and-pandas-on-amazon-ec2/
+# These lines are necessary to make Pandas work on an EC2 instance
+
+sudo yum update
+sudo yum groupinstall “Development Tools”
+sudo yum install python-devel libpng-devel freetype-devel
+pip install --upgrade pip
+sudo pip install pandas
